@@ -1,0 +1,14 @@
+{
+  "TP": 112961,
+  "FN": 0,
+  "FP": 1556671,
+  "TN": 0,
+  "precision": 0.0677,
+  "recall": 1.0,
+  "f1": 0.1267,
+  "fnr": 0.0,
+  "model_path": "../Results/all/CNN_WGAN_2026-03-30 23:45:00.126340_10_0.0001_64_50_0.5",
+  "csv": "../../low_frequency_dataset/road_lowfreq.csv",
+  "n_attack_windows": 836893,
+  "n_normal_windows": 832742
+}

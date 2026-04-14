@@ -1,0 +1,12 @@
+# CanBus-IDS (README: Python 3, TensorFlow 1.15)
+# For Python 3.6–3.7: pip install "tensorflow<2". For newer Python: tensorflow (code may need tf.compat.v1)
+tensorflow
+# TFRecord writer without importing TensorFlow (preprocessing.py / preprocess_low_frequency.py)
+tfrecord
+crc32c
+pandas
+numpy
+dask[dataframe]
+scikit-learn
+tqdm
+matplotlib

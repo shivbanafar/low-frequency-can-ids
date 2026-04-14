@@ -1,0 +1,15 @@
+Results/
+Data/
+IDS_AAE.zip
+.ipynb_checkpoints/
+__pycache__/
+venv/
+DATASET/
+Data_MergedLowFreq/
+Data_MergedHCRL_ROAD/
+Data_Road_CrossDataset/
+*.zip
+archive/
+*.log
+TEAMMATE_PPT_BRIEF.md
+.claude/

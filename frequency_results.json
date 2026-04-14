@@ -1,0 +1,24 @@
+{
+  "best_f1_threshold": {
+    "TP": 848,
+    "FN": 448,
+    "FP": 0,
+    "TN": 5116,
+    "precision": 1.0,
+    "recall": 0.6543,
+    "f1": 0.791,
+    "fnr": 0.3457,
+    "threshold": 2987.59130859375
+  },
+  "fixed_threshold_mean_plus_3std": {
+    "TP": 1206,
+    "FN": 90,
+    "FP": 0,
+    "TN": 5116,
+    "precision": 1.0,
+    "recall": 0.9306,
+    "f1": 0.964,
+    "fnr": 0.0694,
+    "threshold": 0.3637118637561798
+  }
+}

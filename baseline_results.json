@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Decision Tree",
+    "TP": 819,
+    "FN": 477,
+    "FP": 192,
+    "TN": 4924,
+    "precision": 0.8101,
+    "recall": 0.6319,
+    "f1": 0.71,
+    "fnr": 0.3681,
+    "accuracy": 0.8957
+  },
+  {
+    "name": "Random Forest",
+    "TP": 735,
+    "FN": 561,
+    "FP": 0,
+    "TN": 5116,
+    "precision": 1.0,
+    "recall": 0.5671,
+    "f1": 0.7238,
+    "fnr": 0.4329,
+    "accuracy": 0.9125
+  },
+  {
+    "name": "SVM (RBF, C=10)",
+    "TP": 1236,
+    "FN": 60,
+    "FP": 0,
+    "TN": 5116,
+    "precision": 1.0,
+    "recall": 0.9537,
+    "f1": 0.9763,
+    "fnr": 0.0463,
+    "accuracy": 0.9906
+  },
+  {
+    "name": "MLP (1000,1000)",
+    "TP": 1245,
+    "FN": 51,
+    "FP": 0,
+    "TN": 5116,
+    "precision": 1.0,
+    "recall": 0.9606,
+    "f1": 0.9799,
+    "fnr": 0.0394,
+    "accuracy": 0.992
+  }
+]
