@@ -65,45 +65,6 @@ pipeline/                   <- everything needed to replicate the paper
 │
 ├── generate_dataset.py      Step 0: raw CSV + normal trace -> low-frequency CSV at configurable injection rate\n├── cross_dataset_eval.py    Step 6: evaluate HCRL-trained model on a different vehicle's data\n│\n└── requirements.txt         Python dependencies
 
-archive/                    <- not needed for this paper
-│                              (original HCRL pipeline, notebooks, dev scripts)
-├── notebooks/               Original repo Jupyter notebooks
-├── Data/                    Original HCRL TFRecords (standard benchmark splits)
-├── preprocessing.py         Old HCRL pipeline — replaced by preprocess_low_frequency.py
-├── run_pipeline.sh          Old HCRL shell pipeline
-├── run_low_frequency_pipeline.sh  Outdated — uses wrong preprocessing script
-├── test_performance.py      Inference timing benchmark
-├── test_imports.py          Dev debugging helper
-├── text_to_csv.py           One-time HCRL .txt -> CSV converter (standalone)
-└── wa_sweep.log             Full training log from the paper's sweep run
-
-DATASET/                    <- raw source data (needed only for Step 1)
-├── DoS_dataset.csv
-├── Fuzzy_dataset.csv
-├── RPM_dataset.csv
-├── gear_dataset.csv
-└── normal_run_data.txt      Clean normal trace used for normal window extraction
-
-Data_MergedLowFreq/         <- preprocessed TFRecords (output of Steps 1-2)
-└── Train_0.7_Labeled_0.15/
-    ├── MergedLowFreq/       Attack windows: train_label, train_unlabel, val, test
-    └── Normal/              Normal windows: train_label, train_unlabel, val, test
-
-Results/                    <- trained model checkpoints (output of Step 3)
-└── all/
-    └── CNN_WGAN_<timestamp>_10_0.0001_64_50_0.5/
-        ├── Saved_models/    Checkpoint files (restored by train.py for evaluation)
-        ├── Tensorboard/     TensorBoard event files
-        └── log/
-            ├── sum_val.txt  Per-epoch validation metrics (read by plot_results.py)
-            └── log.txt      Training log
-
-baseline_results.json        Sklearn baseline metrics — Table 3 in paper
-frequency_results.json       z-score detector metrics — Table 3 in paper
-wa_sweep_results.json        Per-w_a metrics — Table 2 in paper
-wa_sweep_results_plot.png    FP/FN trade-off plot — Fig. 2 in paper
-```
-
 ---
 
 ## Architecture: CAAE
